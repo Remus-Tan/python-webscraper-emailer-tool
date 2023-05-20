@@ -6,8 +6,16 @@ on:
   workflow_dispatch:
     
 jobs:
-  myprotein-job:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: first-step
-        run: echo "test boy"
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version;: 3.x
+      - name: Run email code
+        env:
+          USER_EMAIL: ${{ secrets.USER_EMAIL }}
+          USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
+          TARGET_EMAIL: ${{ secrets.TARGET_PASSWORD }}
+        run: python send_email.py
