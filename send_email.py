@@ -8,9 +8,6 @@ EMAIL = os.environ.get('USER_EMAIL')
 PASSWORD = os.environ.get('USER_PASSWORD')
 TARGET_EMAIL = os.environ.get('TARGET_EMAIL')
 
-print(EMAIL)
-print(TARGET_EMAIL)
-
 message = """\
 Subject: GitHub Email Report
 
