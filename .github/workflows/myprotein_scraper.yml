@@ -3,7 +3,8 @@ name: scraper-boy
 on:
   schedule:
     - cron: '* 1 * * *'
-
+  workflow_dispatch:
+    
 jobs:
   myprotein-job:
     runs-on: ubuntu-latest
