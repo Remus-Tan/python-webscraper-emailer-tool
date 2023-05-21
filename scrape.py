@@ -23,7 +23,7 @@ def scrape_myprotein():
         search = re.findall('\s\d*%\s', child.text)
 
     for index, text in enumerate(search):
-        search[index] = text.trim()
+        search[index] = text.strip()
 
     return search
 
