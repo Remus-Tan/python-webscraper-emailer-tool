@@ -1,6 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-import chromedriver_autoinstaller
 import re
 
 options = Options()
@@ -11,8 +10,7 @@ options.add_argument('--disable-dev-shm-usage')
 options.add_argument('disable-infobars')
 options.add_argument("--disable-extensions")
 
-chromedriver_autoinstaller.install(chrome_options=options, executable_path='/usr/bin/chromedriver')
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(chrome_options=options, executable_path='/usr/bin/chromedriver')
 
 def scrape_myprotein():
     driver.get('https://www.myprotein.com.sg/')
