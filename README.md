@@ -1,5 +1,5 @@
 # python-webscraper-emailer-tool
-This tool uses Python to scrape data and send simple email reports.  
+This tool uses Python to scrape data and send simple email reports scheduled through GitHub actions.
 For this repo, it scrapes myprotein.com.sg to retrieve some text and sends an email every hour with the findings.
 
 # How to use
