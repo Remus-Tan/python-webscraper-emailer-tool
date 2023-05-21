@@ -22,7 +22,7 @@ def scrape_myprotein():
     for child in myprotein_banner_text:
         search = re.findall('\s\d*%\s', child.text)
 
-    for index, text in search:
+    for index, text in enumerate(search):
         search[index] = text.trim()
 
     return search
