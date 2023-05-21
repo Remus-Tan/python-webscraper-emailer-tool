@@ -1,5 +1,6 @@
 import smtplib, ssl
 import os
+from scrape import scrape_myprotein
 
 port = 465
 smtp_server = "smtp.gmail.com"
@@ -8,10 +9,12 @@ EMAIL = os.environ.get('USER_EMAIL')
 PASSWORD = os.environ.get('USER_PASSWORD')
 TARGET_EMAIL = os.environ.get('TARGET_EMAIL')
 
-message = """\
-Subject: GitHub Email Report
+scrape_results = scrape_myprotein()
 
-This is a test!
+message = f"""\
+Subject: MyProtein Scraper: {scrape_results}
+
+MyProtein Scraper has found: {scrape_results}
 """
 
 context = ssl.create_default_context()
