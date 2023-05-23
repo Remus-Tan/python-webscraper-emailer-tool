@@ -12,4 +12,4 @@ For this repo, it scrapes myprotein.com.sg to retrieve some text and sends an em
 7. For setting up the gmail details, follow this tutorial: https://www.youtube.com/watch?v=2OwLb-aaiBQ
 
 # Sample output
-![image](https://github.com/Remus-Tan/python-webscraper-emailer-tool/assets/109366240/30d86e62-7014-4cd3-97bb-462c661a0f62)
+![image](https://github.com/Remus-Tan/python-webscraper-emailer-tool/assets/109366240/a854f97a-ebcd-43b0-9e8b-941cc2340200)
